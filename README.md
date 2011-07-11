@@ -10,7 +10,7 @@ Please send me an email if you use this in your game, I'd love to put together a
 
 To see it in action, check out this modified version of the Flixel EZPlatformer sample game: [struct.ca/ex/ezicade](http://struct.ca/ex/ezicade)
 
-## Usage
+## Usage 
 - - -
     import flash.ui.Keyboard;
     import ca.struct.icade.iCadeManager;
