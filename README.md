@@ -8,6 +8,8 @@ Created by Matt Rix - [@MattRix](http://twitter.com/MattRix) - matt[at]matt-rix.
 
 Please send me an email if you use this in your game, I'd love to put together a list of all the games that are using this.
 
+To see it in action, check out this modified version of the Flixel EZPlatformer sample game: [struct.ca/ex/ezicade](http://struct.ca/ex/ezicade)
+
 ## Usage
 - - -
     import flash.ui.Keyboard;
@@ -53,4 +55,3 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 THE SOFTWARE.
-
