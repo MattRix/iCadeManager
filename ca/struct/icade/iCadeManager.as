@@ -21,21 +21,22 @@ package ca.struct.icade
 
 		public static var stage:Stage;
 		
-		private static function setupControls():void
+		private static function setupControls():void 
 		{
 			_controls = 
 			[
-				new Control("UP", 87, 69, "W", "E"),// WE 
-				new Control("RIGHT", 68, 67, "D", "C"),// DC 
-				new Control("DOWN", 88, 90, "X", "Z"),// XZ 
-				new Control("LEFT", 65, 81, "A", "Q"),// AQ 
-				new Control("A", 89, 84, "Y", "T"),// YT 
-				new Control("B", 85, 70, "U", "F"),// UF 
-				new Control("C", 73, 77, "I", "M"),// IM 
-				new Control("D", 79, 71, "O", "G"),// OG 
-				new Control("E", 72, 82, "H", "R"),// HR 
-				new Control("F", 74, 78, "J", "N"),// JN 
-				new Control("G", 75, 80, "K", "P"),// KP 
+				new Control("UP", 87, 69, "W", "E"),
+				new Control("RIGHT", 68, 67, "D", "C"),
+				new Control("DOWN", 88, 90, "X", "Z"),
+				new Control("LEFT", 65, 81, "A", "Q"),
+				new Control("A", 89, 84, "Y", "T"),
+				new Control("B", 85, 70, "U", "F"),
+				new Control("C", 73, 77, "I", "M"),
+				new Control("D", 79, 71, "O", "G"),
+				new Control("E", 72, 82, "H", "R"),
+				new Control("F", 74, 78, "J", "N"),
+				new Control("G", 75, 80, "K", "P"),
+				new Control("H", 76, 86, "L", "V")
 			];
 			
 			_toggleControls = [_controls[4], _controls[5], _controls[6], _controls[7]]; // Buttons ABCD (the top row)
@@ -44,6 +45,9 @@ package ca.struct.icade
 		public static function start(stage:Stage):void
 		{
 			iCadeManager.stage = stage;
+			//add the listeners with high priority because we want to be
+			//the first object to get the events so we can stop them from
+			//propogating if needed
 			stage.addEventListener(KeyboardEvent.KEY_DOWN, onKeyDown, false, 1000);
 			stage.addEventListener(KeyboardEvent.KEY_UP, onKeyUp, false, 1000);
 			setupControls();
